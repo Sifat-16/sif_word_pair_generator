@@ -8,7 +8,7 @@ import 'package:sif_word_pair_generator/view_model/home_view_model.dart';
 
 import '../utils/keys/shared_preference_keys.dart';
 
-class FavouriteViewModel extends ChangeNotifier{
+class FavoriteViewModel extends ChangeNotifier{
 
   List<WordPair> favourites = [];
 

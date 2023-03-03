@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sif_word_pair_generator/view_model/favourite_view_model.dart';
+import 'package:sif_word_pair_generator/view_model/favorite_view_model.dart';
 
 import '../data/model/word_pair.dart';
 
-class FavouriteScreen extends StatefulWidget {
-  const FavouriteScreen({Key? key}) : super(key: key);
+class FavoriteScreen extends StatefulWidget {
+  const FavoriteScreen({Key? key}) : super(key: key);
 
   @override
-  State<FavouriteScreen> createState() => _FavouriteScreenState();
+  State<FavoriteScreen> createState() => _FavoriteScreenState();
 }
 
-class _FavouriteScreenState extends State<FavouriteScreen> {
+class _FavoriteScreenState extends State<FavoriteScreen> {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Provider.of<FavouriteViewModel>(context, listen: false).getFavourites();
+    Provider.of<FavoriteViewModel>(context, listen: false).getFavourites();
   }
   @override
   Widget build(BuildContext context) {
-    final favoriteViewModel = Provider.of<FavouriteViewModel>(context);
+    final favoriteViewModel = Provider.of<FavoriteViewModel>(context);
     return Scaffold(
       appBar:AppBar(
         title: Text("Favorites"),

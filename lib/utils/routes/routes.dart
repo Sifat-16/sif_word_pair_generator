@@ -13,7 +13,7 @@ class Routes{
         return MaterialPageRoute(builder: (context)=>HomeScreen());
 
       case RoutesName.favourite:
-        return MaterialPageRoute(builder: (context)=>FavouriteScreen());
+        return MaterialPageRoute(builder: (context)=>FavoriteScreen());
 
       default:
         return MaterialPageRoute(builder: (_){
